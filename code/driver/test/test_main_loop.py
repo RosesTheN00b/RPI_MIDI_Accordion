@@ -23,7 +23,7 @@ class TestMainLoop(unittest.TestCase):
         setup_board(board, gpio, conf)
 
         board.setmode.assert_called_with(gpio.BOARD)
-        board.setup.assert_called_with(button_key, gpio.IN, pull_up_down=gpio.PUD_UP)
+        board.setup.assert_called_with(button_key, gpio.IN, gpio.PUD_UP)
 
     def test_setup_midi(self):
         synth = Synth()
