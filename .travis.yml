@@ -2,4 +2,4 @@ language: python
 python:
   - "3.8"
 script:
-  - sh code/ci/ci_driver.sh
+  - /bin/bash code/ci/ci_driver.sh
