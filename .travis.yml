@@ -1,5 +1,8 @@
 language: python
 python:
   - "3.8"
+before_install:
+  - sudo apt-get update
+  - sudo sudo apt-get -y install fluidsynth
 script:
   - bash code/ci/ci_driver.sh
